@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Poll Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./css/thumbnail-gallery.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./UserHomepage.html"> CAB </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href ="./Events.html">Events</a>
+                    </li>
+                    <li>
+                        <li><a href ="./Pictures.html">Pictures</a></li>
+                    </li>
+                    <li>
+                        <li><a href ="./Poll.html">Polls</a></li>
+                    </li>
+                    <li>
+                        <li><a href ="./Contact.html">Contact Information</a></li>
+                    </li>
+                    <li>
+                        <li><a href ="./signup.html">Sign Up</a></li>
+                    </li>
+                    <li>
+                        <li><a href ="./Login.html">Login</a></li>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class = "row">
+        <div class="col-sm-4 col-sm-offset-1">
+        	<form method="post" action="http://poll.pollcode.com/41785357">
+        	<div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;">
+        		<div style="padding:2px 0px 4px 2px;">
+        			<strong>Out of the following 3 activities, which one would you most likely attend? </strong>
+        		</div>
+                <div class="text-center">
+        		<input type="radio" name="answer" value="1" id="answer417853571" style="float:left;" />
+        		<label for="answer417853571" style="float:left;width:150px;">Braves game</label>
+        		<div style="clear:both;height:2px;"></div>
+        		<input type="radio" name="answer" value="2" id="answer417853572" style="float:left;" />
+        		<label for="answer417853572" style="float:left;width:150px;">Atlanta United FC soccer game</label>
+        		<div style="clear:both;height:2px;"></div>
+        		<input type="radio" name="answer" value="3" id="answer417853573" style="float:left;" />
+        		<label for="answer417853573" style="float:left;width:150px;">Medieval Times</label>
+        		<div style="clear:both;height:2px;"></div>
+        		<div align="center" style="padding:3px;">
+        			<input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View ">
+        		</div>
+        		<div align="right" style="font-size:10px">pollcode.com <a href="http://pollcode.com/">free polls</a></div>
+        	   </div>
+            </div>
+        	</form>
+        </div>
+
+        <div class="col-sm-4">
+            <form method="post" action="http://poll.pollcode.com/94112332">
+                <div style="background-color:#BEC0EE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;">
+                    <div style="padding:2px 0px 4px 2px;"><strong>What should be the next theme for Midnight Breakfast?</strong>
+                    </div>
+                    <div class="text-center">
+                    <input type="radio" name="answer" value="1" id="answer941123321" style="float:left;" />
+                    <label for="answer941123321" style="float:left;width:150px;">Harry Potter Yuleball </label>
+                    <div style="clear:both;height:2px;"></div>
+                    <input type="radio" name="answer" value="2" id="answer941123322" style="float:left;" />
+                    <label for="answer941123322" style="float:left;width:150px;">Moana Tropical Theme</label>
+                    <div style="clear:both;height:2px;"></div>
+                    <input type="radio" name="answer" value="3" id="answer941123323" style="float:left;" />
+                    <label for="answer941123323" style="float:left;width:150px;">Winterwonderland </label>
+                    <div style="clear:both;height:2px;"></div>
+                    <input type="radio" name="answer" value="4" id="answer941123324" style="float:left;" />
+                    <label for="answer941123324" style="float:left;width:150px;">Other</label>
+                    <div style="clear:both;height:2px;"></div>
+                    <div align="center" style="padding:3px;">
+                        <input type="submit" value=" Vote ">&nbsp;
+                        <input type="submit" name="view" value=" View ">
+                    </div>
+                    <div align="right" style="font-size:10px">pollcode.com <a href="http://pollcode.com/">free polls</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3> Have any polls to recommend? Contact the director of Bobcat Events with suggestions! </h3>
+</body>
+</html>
