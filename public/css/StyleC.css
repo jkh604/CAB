@@ -1,0 +1,23 @@
+/*.page{
+	background-color: lightblue;
+}
+
+#header{
+	font-size: 1.5em;
+	color:black;
+	position: relative;
+}
+
+#header p{
+	font-size: 2em;
+}
+
+#header ul{
+	display: inline;
+}
+
+#header li{
+	display: inline;
+	float: right;
+	margin-right: 20px;
+}*/

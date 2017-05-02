@@ -1,0 +1,15 @@
+.cab {
+	text-align: center;
+}
+
+.textbox {
+	text-align: center;
+    color: rgb(0,0,255);
+    text-shadow: 1px 1px green;
+}
+
+.news {
+	text-align: center;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 200%;
+}

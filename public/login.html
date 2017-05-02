@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./UserHomepage.html"> CAB </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href ="./Events.html">Events</a>
+                    </li>
+                    <li>
+                        <li><a href ="./Pictures.html">Pictures</a></li>
+                    </li>
+                    <li>
+                        <li><a href ="./Poll.html">Polls</a></li>
+                    </li>
+                    <li>
+                        <li><a href ="./Contact.html">Contact Information</a></li>
+                    </li>
+                    <li>
+                        <li><a href ="./signup.html">Sign Up</a></li>
+                    </li>
+                    <li>
+                        <li><a href ="./Login.html">Login</a></li>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Admin Login</h1>
+                <hr>
+            </div>
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h2>To access administrative features on the site, please input your admin credentials below.</h2>
+                    <img class="logo" src="./img/logo.png" alt="logo" style="width:150px;height:100px"> 
+                </div>
+            </div>
+        </div>
+    <div class="col-md-12" align="center">
+        <h3>Admin Login</h3>
+<!-- action: signupServer program on web server willor handle the form -->
+            <div id="signup">
+            <form>
+                Email:<br>
+            <!-- name field is for server side, id is for the client side js -->
+                <input type="text" name="email" value="" id="email"><br>
+                Password:<br>
+                <input type="password" name="pwd" value="" id="pwd"><br><br>
+                <input type="submit" value="Submit" onclick="return Redirect()">
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- benefit of having the scripts and js code at the end of the body: it will load the webpage faster -->
+    <script type="text/javascript" src="./js/validate.js"></script>
+    <script type="text/javascript">
+        validateEmail();
+        validatePwd();
+    </script>
+    <script type="text/javascript">
+        function Redirect() {
+            let username = "gcsu.cab.exec@gmail.com";
+            let usernameInput = document.getElementById("email").value;
+            let password = "Bobcat!123";
+            let passwordInput = document.getElementById("pwd").value;
+            if (usernameInput == username && passwordInput == password)
+            {
+                window.location="adminPortal.html";
+            }
+            else 
+            {
+                alert("Either the username or password is incorrect. Please try again.");
+                form.username.focus();
+            }
+            return false;       
+        }
+    </script>
+    <br>
+</body>
+</html>

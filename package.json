@@ -1,11 +1,22 @@
 {
-  "name": "project2",
+  "name": "cabweb",
   "version": "1.0.0",
   "description": "CAB",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Kyle Harrison and Andrew Russell",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b"
+  }
 }
